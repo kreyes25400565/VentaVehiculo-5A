@@ -48,10 +48,11 @@ public class Cliente {
     }
     @Override
     public String toString(){
-        return "RS = "+this.rs+"\n"+
-                "RFC = "+this.rfc+"\n"+
-                "EMAIL = "+this.email+"\n";
-
+        return "Cliente: " +
+                "\nNombre: "+ nombre + 
+                "\nRfc: "+ rfc +
+                "\nTelefono: "+ telefono + 
+                "\nEmail: "+ email;
     }
     
 }
