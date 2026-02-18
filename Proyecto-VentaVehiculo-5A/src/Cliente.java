@@ -8,13 +8,15 @@
  * @author Kiberly
  */
 public class Cliente {
-    private String rs;
+    private String nombre;
     private String rfc;
+    private String telefono;
     private String email;
     
-    public Cliente(String rs, String rfc, String email){
-        this.rs = rs;
+    public Cliente(String nombre, String rfc,String telefono, String email){
+        this.nombre = nombre;
         this.rfc = rfc;
+        this.telefono = telefono;
         this.email = email;
     }
     
