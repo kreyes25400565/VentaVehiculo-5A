@@ -20,6 +20,19 @@ public class Cliente {
         this.email = email;
     }
     
+    
+    public String getNombre(){
+        return nombre;
+    }
+    public String getRfc(){
+        return rfc;
+    }
+    public String getTelefono(){
+        return telefono;
+    }
+    public String getEmail(){
+        return email;
+    }
     @Override
     public String toString(){
         return "RS = "+this.rs+"\n"+
