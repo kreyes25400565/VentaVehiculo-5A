@@ -40,4 +40,8 @@ public class Venta {
     public double aplicarDescuentoPorVolumen(){
         
     }
+    @Override
+    public String toString(){
+        
+    }
 }
