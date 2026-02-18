@@ -56,7 +56,7 @@ public class Vehiculo {
         this.capacidadCarga = capacidadCarga;
     }
     
-    public void aplicarDescuento(){
+    public void aplicarDescuento(double procentaje){
         
     }
     
@@ -66,7 +66,7 @@ public class Vehiculo {
                "\nMarca: " + marca +
                "\nModelo: " + modelo +
                "\nAño: " + anio +
-               "\nPrecio: $" + precio +
+               "\nPrecio: " + precio +
                "\nCapacidad de carga: " + capacidadCarga + " kg";
     }
     
