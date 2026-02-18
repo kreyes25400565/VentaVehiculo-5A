@@ -20,4 +20,24 @@ public class Venta {
         this.cliente = cliente;
     }
     
+    public String getFolio(){
+        return folio;
+    }
+    public int getCantidadVehiculo(){
+        return cantidadVehiculos;
+    }
+    public Vehiculo getVehiculo(){
+        return vehiculo;
+    }
+    public Cliente getCliente(){
+        return cliente;
+    }
+    
+    public double calcularTotal(){
+        
+    }
+    
+    public double aplicarDescuentoPorVolumen(){
+        
+    }
 }
