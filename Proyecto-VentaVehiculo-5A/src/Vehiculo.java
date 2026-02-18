@@ -57,6 +57,11 @@ public class Vehiculo {
     }
     
     public void aplicarDescuento(double procentaje){
+        if(porcentaje > 0 && porcentaje <= 100){
+            precio = precio - (precio * porcentaje / 100);
+        }else{
+            System.out.println("es invalido ese porcentaje");
+        }
         
     }
     
