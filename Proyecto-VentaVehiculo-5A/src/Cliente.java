@@ -33,6 +33,19 @@ public class Cliente {
     public String getEmail(){
         return email;
     }
+    
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public void setRfc(String rfc){
+        this.rfc = rfc;
+    }
+    public void setTelefono(String telefono){
+        this.telefono = telefono;
+    }
+    public void setEmail(String email){
+        this.email = email;
+    }
     @Override
     public String toString(){
         return "RS = "+this.rs+"\n"+
