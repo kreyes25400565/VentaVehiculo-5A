@@ -18,7 +18,7 @@ public class Cliente {
         this.email = email;
     }
     
-    @Overide
+    @Override
     public String toString(){
         return "RS = "+this.rs+"\n"+
                 "RFC = "+this.rfc+"\n"+
