@@ -23,7 +23,7 @@ public class Venta {
     public String getFolio(){
         return folio;
     }
-    public int getCantidadVehiculo(){
+    public int getCantidadVehiculos(){
         return cantidadVehiculos;
     }
     public Vehiculo getVehiculo(){
@@ -34,14 +34,39 @@ public class Venta {
     }
     
     public double calcularTotal(){
+        return cantidadVehiculos * vehiculo.getPrecio();
         
     }
     
     public double aplicarDescuentoPorVolumen(){
+        double total = calcularTotal();
+        double descuento = 0;
         
+        if(cantidadVehiculos >= 10){
+            descuento = total * 0.10;
+        }else if(cantidadVehiculos >= 5){
+            descuento = total * 0.05;
+        }
+        return total - descuento;
+    }
+    
+    public int obtenerPorcentajeDescuento(){
+        if(cantidadVehiculos >=10){
+            return 10;
+        }else if(cantidadVehiculos >= 5){
+            return 5;
+        }return 0;
+    }
+    
+    public double obtenerMontoDescuento(){
+        double total = calcularTotal();
+        return total - aplicarDescuentoPorVolumen();
     }
     @Override
     public String toString(){
-        
+        return "Folio: " + folio +
+               "\n" + cliente.toString() +
+               "\nVehículo: " + vehiculo.getMarca() + " " +
+               vehiculo.getModelo() + " " + vehiculo.getAnio();
     }
 }
