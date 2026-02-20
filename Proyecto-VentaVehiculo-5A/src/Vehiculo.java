@@ -57,22 +57,14 @@ public class Vehiculo {
     }
     
     public void aplicarDescuento(double procentaje){
-        if(porcentaje > 0 && porcentaje <= 100){
-            precio = precio - (precio * porcentaje / 100);
-        }else{
-            System.out.println("es invalido ese porcentaje");
-        }
-        
+            precio = precio - (precio * porcentaje / 100);   
     }
     
     @Override
     public String toString(){
-        return "Vehículo" +
-               "\nMarca: " + marca +
-               "\nModelo: " + modelo +
-               "\nAño: " + anio +
-               "\nPrecio: " + precio +
-               "\nCapacidad de carga: " + capacidadCarga + " kg";
+        return marca + " " + modelo + " " + anio +
+               " - " + String.format("$%,.2f", precio) +
+               " - Capacidad: " + capacidadCarga + " kg";
     }
     
 }
